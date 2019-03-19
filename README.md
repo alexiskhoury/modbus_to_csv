@@ -1,5 +1,5 @@
 # About
-A contribution to [Telemetery Viewer][1] software in order to plot Modbus data registers.
+A contribution to [Telemetery Viewer][1] software allowing Modbus data registers to be plotted using csv datagrams transmited over UDP packets.
 
 # Telemetry Viewer
 Telemetry Viewer is a neat piece of software written by [FARELL][1] which is used to trace and plot data from microprocessors (mainly AVR and ESP8266 microchips). The software can receive data in csv format using serial communications. Recently the Author added a UDP server functionality allowing data to be received over Ethernet networks. The software can be configured easily and have several types of data visualization graphics. A simple demonstration can be found on the [Author's website][1].
