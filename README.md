@@ -4,7 +4,7 @@ A contribution to [Telemetery Viewer][1] software in order to plot Modbus data r
 # Telemetry Viewer
 Telemetry Viewer is a neat piece of software written by [FARELL][1] which is used to trace and plot data from microprocessors (mainly AVR and ESP8266 microchips). The software can receive data in csv format using serial communications. Recently the Author added a UDP server functionality allowing data to be received over Ethernet networks. The software can be configured easily and have several types of data visualization graphics. A simple demonstration can be found on the [Author's website][1].
 
-# Tracing Modbus data
+# Tracing Modbus Data
 Telemetry Viewer cannot communicate natively with Modbus slaves/clients. The idea is to have a kind of connector allowing to bridge Modbus clients with Telemetry Viewer. For this purpose, I have created a Nodejs application which sits in between Telemetry Viewer and the Modbus clients. The application polls data registers from Modbus clients, converts the received data to csv format and push it to Telemetry Viewer using UDP datagrams.
 
 The application uses [dgram sockets][2] for data transmission to UDP server and the famous [jsmodbus library][3] for data acquisition from Modbus slaves/clients. Only TCP connection has been implemented using function code 03. The application is in early stage of development but is operational. One needs to modify the config.json file prior to launching the application.
