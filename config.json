@@ -1,0 +1,27 @@
+{
+  "host": {
+      "ip": "192.168.1.144",
+      "port": "8080",
+      "timeout": "1000"
+  },
+
+  "mapping": [
+    {
+      "id": "1",
+      "description": "example 1",
+      "ip": "192.168.1.144",
+      "port": "502",
+      "register": "1",
+      "no": "3"
+    },
+
+    {
+      "id": "2",
+      "description": "example 2",
+      "ip": "192.168.1.144",
+      "port": "502",
+      "register": "1",
+      "no": "1"
+    }
+  ]
+}

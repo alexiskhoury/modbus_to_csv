@@ -1,0 +1,28 @@
+{
+  "name": "modbus_to_csv",
+  "version": "1.0.0",
+  "description": "Modbus to csv over UDP packets",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+	    "node_modules/jsmodbus/src/handler/client/*.js",
+	    "node_modules/jsmodbus/src/handler/server/*.js"
+    ]
+  },
+  "bin": "main.js",
+  "keywords": [
+    "modbus",
+    "upd",
+    "telemetry"
+  ],
+  "author": "Alexis Khoury",
+  "license": "ISC",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "jsmodbus": "^2.4.0",
+    "underscore": "^1.9.1"
+  }
+}
